@@ -9,7 +9,9 @@ b = getenv('SECRET_KEY')
 
 def main():
     lib = AWSLibrary()
-    lib.download_file_from_s3("zappastaticbin", "test.html", "static/downloaded_test.html")
+    lib.create_session_with_keys("us-east-1")
+    lib.test()
+    # lib.download_file_from_s3("zappastaticbin", "test.html", "static/downloaded_test.html")
 
 
 if __name__ == "__main__":
