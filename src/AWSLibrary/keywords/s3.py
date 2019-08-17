@@ -106,7 +106,7 @@ class S3Keywords(LibraryComponent):
 
     @keyword('Allowed Methods')
     def allowed_methods(self, bucket, methods=[]):
-            """ Verifies S3 Bucket CRUD Permission match the parameters given
+        """ Verifies S3 Bucket CRUD Permission match the parameters given
                 You must pass in a list of the CRUD methods expected to be set against buckets policy.
                 @param: ```bucket```
                 @param: ```[ GET, POST, ]
